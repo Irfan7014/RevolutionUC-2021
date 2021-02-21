@@ -1,15 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">\
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/styles.css">
     <title>COIN TOSSER</title>
+    <script>
+      function tossCoin()
+      {
+        var elem = document.getElementById("buttonToss");
+        if(document.getElementById("buttonToss").innerHTML=="HEADS"||document.getElementById("buttonToss").innerHTML=="TAILS")
+        {
+          elem.innerHTML="TOSS"
+        }
+        if(document.getElementById("buttonToss").innerHTML=="TOSS"){
+          var value=Math.floor((Math.random() * 10) + 1);
+        if(value%2==0){
+            elem.innerHTML = "HEADS"
+        }
+        else{
+          elem.innerHTML = "TAILS"
+        }
+      }
+      }
+    </script>
 </head>
 <body>
-    <h1 class="heading">TOSS A COIN</h1>
+  <div class="heading">
+    TOSS A COIN
+  </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
     <div class="container">
     <div class="center">
-      <button>Centered Button</button>
+      <button class="btn" onclick="tossCoin()" id="buttonToss">TOSS</button>
   </div>
 </div>
 </body>
